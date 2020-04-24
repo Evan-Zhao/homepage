@@ -1,14 +1,14 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Birth of the Site"
+title: "First Day of the Site"
 subtitle: ""
-summary: "\"The future is now\""
+summary: "Thanks for visiting."
 authors: []
 tags: []
 categories: []
-date: 2020-03-15T17:00:53-05:00
-lastmod: 2020-03-15T17:00:53-05:00
+date: 2020-04-24T03:13:50-05:00
+lastmod: 2020-04-24T03:13:50-05:00
 featured: false
 draft: false
 
