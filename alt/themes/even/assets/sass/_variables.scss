@@ -92,10 +92,16 @@ $header-padding: 20px 20px !default;
 }
 
 // Font size of the logo.
-$logo-font-size: 48px !default;
+$logo-font-size: 42px !default;
 
 // Font family of the logo.
 $logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+
+// Font size of the description (subtitle)
+$sub-font-size: 20px !default;
+
+// Font family of the logo.
+$sub-font-family: 'Font Awesome 5 Free';
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;

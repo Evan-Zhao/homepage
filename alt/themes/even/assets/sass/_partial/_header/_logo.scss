@@ -9,6 +9,12 @@
     font-size: $logo-font-size;
     font-family: $logo-font-family;
   }
+
+  .sub {
+    font-size: $sub-font-size;
+    font-family: $sub-font-family;
+    font-style: italic;
+  }
 }
 
 @include max-screen() {
