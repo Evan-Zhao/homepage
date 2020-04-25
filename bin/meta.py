@@ -89,11 +89,12 @@ class ParsedFile:
 
 
 def get_file_mod_datetime_str(filename: str):
-    from pytz import reference
+    from pytz import reference, timezone
     mtime_secs = getmtime(filename)
     mtime = datetime.utcfromtimestamp(mtime_secs)
     localtime = reference.LocalTimezone()
-    mtime_tz = mtime.replace(tzinfo=localtime)
+    basetime = timezone("UTC")
+    mtime_tz = basetime.localize(mtime).astimezone(localtime)
     return mtime_tz.strftime(r'%Y-%m-%dT%H:%M:%S%z')
 
 
