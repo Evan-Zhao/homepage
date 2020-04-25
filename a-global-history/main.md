@@ -78,7 +78,7 @@ Homo sapiens
   - Early Paleolithic: 125,000 hominids; the end of the Paleolithic: 5.32 million; over $42 \times$
 - Population explosion $\rightarrow$ spread over larger areas
   - Australopithecus (hominid): within Africa savanna lands
-  - Homo erectus: Africa $\rightarrow$ temperate zones of Eurasia; Java man, Peking man, Hiedelberg man
+  - Homo erectus: Africa $\rightarrow$ temperate zones of Eurasia; Java man, Peking man, Heidelberg man
   - Homo sapiens: Siberian tundra, African & Southeast Asian tropical rain forests
 - Dispersal $\rightarrow$ race differentiation
   - Happens late in time; all modern races "stem from a common stock"; able to interbreed,
@@ -166,7 +166,7 @@ humans were still food gatherers.
 
 - Human population: 5.32 million (10,000 BC) $\rightarrow$ 133 million (2,000 BC)
 - Agriculture spreads long distance and converts hunters into agriculturalists
-  - Race imbalance: Mongoloids, Caucasoids, Negroids outstood in number
+  - Race imbalance: Mongoloids, Caucasoids, Negroids outstand in number
 
 ### Highlights
 
@@ -190,7 +190,7 @@ humans were still food gatherers.
    >
    > The reason is that only humans can symbolize, or envision things and concepts divorced from here-and-now reality. Only humans laugh, and only they know that they will die. Only they have wondered about the universe and its origins, about their place in it and in the hereafter.
    >
-   > With these unique and revolutionizing abilities, humans have been able to cope with their environment without mutations. Human culture became the new, nonbiological way of having fur in the arctic, water storage in the desert, and fins in the water.
+   > With these unique and revolutionizing abilities, humans have been able to cope with their environment without mutations. Human culture became the new, non-biological way of having fur in the arctic, water storage in the desert, and fins in the water.
    >
    > More concretely, culture consists of tools, clothing, ornaments, institutions, language, art forms, and religious beliefs and practices. All these have served to adapt humans to their physical environment and to their fellow humans. ...
 
@@ -225,11 +225,11 @@ Are human beings aggressive or cooperative by nature? Neither.
 Arguments in both direction have been made, and proofs for either side has been found.
 The tribe of Tasaday is marked for their complete lack of aggressiveness, while Fentous are
 generation after generation fierce fighters.
-This highly suggests that a perference for peace or war is not nature, but nurture.
+This highly suggests that a preference for peace or war is not nature, but nurture.
 
 This question is critical because, as a part of the technology leaps, we are becoming increasingly
 likely to destroy ourselves. Wars have become more deadly as well as more frequent.
-The Peolithic period did not see many wars because there are not much to gain in fighting,
+The Paleolithic period did not see many wars because there are not much to gain in fighting,
 and too much to lose -- might just be the whole humanity -- over not cooperating to deal with the
 harsh nature. Over time there came more incentives to fight over more assets, and the ways of killing
 became more advanced.
@@ -245,7 +245,7 @@ Focus: _classical civilizations_ in _classical age_
   (Unlike agricultural revolution, in which the Middle East took the major lead)
 - Outward expansion, contact with each other
 
-### Chapter 3: First Eurasian Civilizations, 3500 - 1000 B.C.
+### Chapter 3: First Eurasian Civilizations, 3500 - 1000 B.C
 
 - Earliest: Sumer, "the land of Shinar", on Mesopotamia (current-day Iraq), around 3500 B.C.
   - The conversion from tribalism to civilization is not an event (immediate) but a process (over time),
@@ -333,7 +333,7 @@ They were replaced because they could not compete with civilizations that were m
 These class societies squeezed taxes and rents out of the peasants to the higher classes, and the peasants had
 to work infinitely harder than did the tribal cultivators.
 
-The civilizations on the banks of the Tigris-Euphrate, the Nile, the Indus, and the Yellow river all underwent
+The civilizations on the banks of the Tigris-Euphrates, the Nile, the Indus, and the Yellow river all underwent
 similar expansion and spread.
 By the time of Christ it extended with virtually no interruption from the English Channel to the China Sea.
 
