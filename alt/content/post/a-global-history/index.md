@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "A Global History"
+title: "A Global History (Stavrianos)"
 subtitle: ""
-summary: ""
+summary: "Reading note for A Global History, Chapter 1-3"
 authors: []
 tags: []
 categories: []
@@ -27,9 +27,8 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-# A Global History (Stavrianos)
 
-_A global history: from prehistory to the present, English version, 5th edition._
+[_A global history: from prehistory to the present, English version, 5th edition._](/a-global-history-stavrianos.pdf)
 
 ## Preface
 
@@ -113,7 +112,7 @@ Homo sapiens
   - Happens late in time; all modern races "stem from a common stock"; able to interbreed,
     and "no significant differences in innate mental capacity among all races."
 
-{{< figure src="images/race-dist.jpg" title="Race distribution" width="50%">}}
+{{< figure src="images/race-dist.jpg" title="Race distribution" width="70%">}}
 
 ### Chapter 2: Humans As Food Growers
 
@@ -142,7 +141,9 @@ humans were still food gatherers.
 - Multi-species agriculture: higher productivity + subsistence security
 - Incipient agriculture: earliest domestication to agricultural revolution
   - Gradual and prolonged; several millennia
-  - {{< figure src="images/agri-dist.jpg" title="Expansion of Agriculture" width="50%">}}
+
+{{< figure src="images/agri-dist.jpg" title="Expansion of Agriculture" width="70%">}}
+
 - Diffusion of agriculture is sparked by the _inefficiency_ of early agriculture
   - Land is used for a few years $\rightarrow$ abandoned to restore fertility for $8 \sim 10+$ years
   - Recuperating land $:$ cultivated land is $5 \sim 10 : 1$
@@ -366,7 +367,7 @@ The civilizations on the banks of the Tigris-Euphrates, the Nile, the Indus, and
 similar expansion and spread.
 By the time of Christ it extended with virtually no interruption from the English Channel to the China Sea.
 
-{{< figure src="images/civil-timeline.png" title="Spread of civilizations" width="50%">}}
+{{< figure src="images/civil-timeline.png" title="Spread of civilizations" width="70%">}}
 
 In the same way 3500 B.C. is estimated as the dawn of civilization on Mesopotamia, time may be given for other
 centers of civilizations:
