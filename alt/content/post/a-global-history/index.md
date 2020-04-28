@@ -1,3 +1,32 @@
+---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "A Global History"
+subtitle: ""
+summary: ""
+authors: []
+tags: []
+categories: []
+date: 2020-04-28T01:42:50-05:00
+lastmod: 2020-04-28T01:42:50-05:00
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
 # A Global History (Stavrianos)
 
 _A global history: from prehistory to the present, English version, 5th edition._
@@ -84,7 +113,7 @@ Homo sapiens
   - Happens late in time; all modern races "stem from a common stock"; able to interbreed,
     and "no significant differences in innate mental capacity among all races."
 
-<img src="race-dist.jpg" alt="Race distribution" width="50%"/>
+{{< figure src="images/race-dist.jpg" title="Race distribution" width="50%">}}
 
 ### Chapter 2: Humans As Food Growers
 
@@ -113,7 +142,7 @@ humans were still food gatherers.
 - Multi-species agriculture: higher productivity + subsistence security
 - Incipient agriculture: earliest domestication to agricultural revolution
   - Gradual and prolonged; several millennia
-  - <img src="agri-dist.jpg" alt="Expansion of Agriculture" width="50%"/>
+  - {{< figure src="images/agri-dist.jpg" title="Expansion of Agriculture" width="50%">}}
 - Diffusion of agriculture is sparked by the _inefficiency_ of early agriculture
   - Land is used for a few years $\rightarrow$ abandoned to restore fertility for $8 \sim 10+$ years
   - Recuperating land $:$ cultivated land is $5 \sim 10 : 1$
@@ -123,7 +152,7 @@ humans were still food gatherers.
   (3000 B.C.) $\rightarrow$ sub-Saharan Africa
   - New world: maize in Mexico, 7000 B.C.; two species of squash, the bottle gourd, tepary bean,
   chili peppers, amaranths, and avocados.
-  - ![Agriculture dispersal](agri-dispersal.png)
+  - {{< figure src="images/agri-dispersal.png" title="Agriculture dispersal">}}
 
 #### Varieties of Agriculture
 
@@ -337,7 +366,7 @@ The civilizations on the banks of the Tigris-Euphrates, the Nile, the Indus, and
 similar expansion and spread.
 By the time of Christ it extended with virtually no interruption from the English Channel to the China Sea.
 
-<img src="./civil-timeline.png" alt="Spread of civilizations" width="50%"/>
+{{< figure src="images/civil-timeline.png" title="Spread of civilizations" width="50%">}}
 
 In the same way 3500 B.C. is estimated as the dawn of civilization on Mesopotamia, time may be given for other
 centers of civilizations:
