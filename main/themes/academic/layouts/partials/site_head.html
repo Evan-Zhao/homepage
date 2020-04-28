@@ -191,6 +191,20 @@
     {{ if not .Date.IsZero }}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ end }}
   {{ end }}
 
+  {{ if not .Site.IsServer }}
+    {{ with .Site.GoogleAnalytics }}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778042-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164778042-1');
+      </script>
+    {{ end }}
+  {{ end }}
+
   {{ partial "jsonld/main" (dict "page" . "summary" $desc) }}
 
   {{ partial "cookie_consent" . }}
