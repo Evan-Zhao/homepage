@@ -209,7 +209,7 @@ Even._linkToc = function() {
   const links = document.querySelectorAll('#TableOfContents a:first-child');
   for (let i = 0; i < links.length; i++) links[i].className += ' toc-link';
 
-  for (let num = 1; num <= 6; num++) {
+  for (let num = 1; num <= 3; num++) {
     const headers = document.querySelectorAll('.post-content>h' + num);
     for (let i = 0; i < headers.length; i++) {
       const header = headers[i];
