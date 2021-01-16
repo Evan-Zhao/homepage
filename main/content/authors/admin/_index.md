@@ -62,7 +62,7 @@ social:
 user_groups: []
 ---
 
-I am a 1st-year Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/) at the [University of Illinois Urbana-Champaign](illinois.edu).
+I am a 2nd-year Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/) at the [University of Illinois Urbana-Champaign](illinois.edu).
 
 I am co-advised by [Prof. Sasa Misailovic](http://misailo.web.engr.illinois.edu/) and [Prof. Vikram S. Adve](https://vikram.cs.illinois.edu/).
 
