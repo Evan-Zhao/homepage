@@ -18,7 +18,7 @@ organizations:
     url: "https://cs.illinois.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include approximate computing, compiler stack for heterogeneous computing, and a mindful blend of both.
+# bio: My research interests include approximate computing, compiler stack for heterogeneous computing, and a mindful blend of both.
 
 interests:
   - Programming Languages
@@ -62,8 +62,21 @@ social:
 user_groups: []
 ---
 
-I am a 2nd-year Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/) at the [University of Illinois Urbana-Champaign](illinois.edu).
+I am a 5th-year Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/) at the [University of Illinois Urbana-Champaign](illinois.edu).
 
 I am co-advised by [Prof. Sasa Misailovic](http://misailo.web.engr.illinois.edu/) and [Prof. Vikram S. Adve](https://vikram.cs.illinois.edu/).
 
-My research interest is in programming languages, currently focusing on approximate computing, compiler stack for heterogeneous computing, and a mindful blend of both.
+My research interest is in compilers and programming systems for tensor programs.
+Compilers are an unique vehicle for a myriad of intriguing program optimizations:
+
+- Tensor compilers feature specific optimizations
+  [(loop nest optimizations](https://en.wikipedia.org/wiki/Loop_nest_optimization),
+  [polyhedral model](https://en.wikipedia.org/wiki/Polytope_model), ...)
+  that are highly effective to tensor programs;
+- [Accuracy-aware optimizations](https://misailo.web.engr.illinois.edu/papers/misailovic-accuracy-aware-optimization.pdf)
+  won't even preserve your program's semantics, but they carefully reason about how much havoc they wreak
+  and can be alike beneficial for tensor programs (pruning, quantization).
+- Of course general purpose optimizations are not going away: DCE, CSE, LICM, ...
+
+Together they present a tough challenge (and opportunity!) of _choosing the right optimizations to apply_ to a given tensor program.
+See my recent projects and [CV](/files/cv.pdf) for more details.
