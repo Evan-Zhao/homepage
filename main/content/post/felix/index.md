@@ -1,9 +1,8 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
-title: "First Day of the Site"
+title: "Paper accepted at ASPLOS'24!"
 subtitle: ""
-summary: "Thanks for visiting."
+summary: "Our work \"Felix: Optimizing Tensor Programs with Gradient Descent\" was accepted by ASPLOS 2024.
+Now you may just be able to optimize your DNN in minutes, instead of hours!"
 authors: []
 tags: []
 categories: []
@@ -27,8 +26,3 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-I finally did this after a ourbreak of COVID-19 put everything to a pause, and I'm trapped at home
-by myself.
-
-This site will be updated whenever something interesting and new happens.
