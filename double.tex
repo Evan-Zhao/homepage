@@ -1,0 +1,222 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{newtxtext,newtxmath}  % Change font to Times New Roman
+\usepackage{fontawesome}  % Icons
+\usepackage{titlesec}  % Section format
+\usepackage{geometry}  % Page layout
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{xparse}  % for \NewDocumentCommand
+
+\titleformat{\section}{\sc\Large}{}{0pt}{}[\hrule]
+\titlespacing*{\section}{0pt}{0.7em minus 0.2em}{0.8em minus 0.2em}
+\titleformat{\subsection}{\bfseries}{}{0pt}{}[]
+\titlespacing*{\subsection}{0pt}{1em plus 0.2em minus 0.2em}{0.5em plus 0.2em minus 0.2em}
+\titlespacing{\paragraph}{0pt}{0.5\baselineskip}{1em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\geometry{centering,left=2cm,right=2cm,top=1.5cm,bottom=2cm}
+
+\setitemize{topsep=0.1em,partopsep=0em,itemsep=0.1em,parsep=0em,leftmargin=1em}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=blue,
+}
+
+\newcommand{\leftrighttext}[2]{%
+  \makebox[\textwidth][l]{#1\hfill#2}%
+}
+\newcommand*{\cventry}[6]{%
+  \leftrighttext{%
+    {\large\bfseries#1}%
+    \ifthenelse{\equal{#2}{}}{}{, \textit{#2}}%
+    \ifthenelse{\equal{#3}{}}{}{, #3}%
+    \ifthenelse{\equal{#4}{}}{}{, #4}%
+    \strut%
+  }{#5}
+  \newline{}
+  \begin{minipage}[t]{\linewidth}#6
+  \end{minipage}
+}
+
+\NewDocumentCommand{\cvitem}{O{0.13\textwidth} O{.1em} m m}{%
+  \begin{tabular}{@{}p{#1}@{\hspace{0.01\textwidth}}p{\dimexpr\textwidth-#1-0.01\textwidth\relax}@{}}%
+    \raggedleft{#3} &{#4}%
+  \end{tabular}%
+\par\addvspace{#2}}
+\newcommand{\cvpublist}[3]{
+  \cvitem{#1}{%
+    {\bfseries{#2} \vspace*{0.2em}}\newline{}
+    \begin{minipage}[t]{\linewidth}{\normalsize #3 \vspace*{3pt}}
+    \end{minipage}%
+  }
+}
+\newcommand{\cvshortlist}[2]{\cvitem[0.15\textwidth][0em]{#1}{#2}}
+
+\begin{document}
+
+\setlength{\tabcolsep}{0.4em}
+\newcommand{\comma}{\hspace*{0.3em}}
+\begin{tabular}{lclclcl}
+  \multicolumn{2}{l}{\LARGE \textbf{\textsc{Yifan Zhao}}} \vspace{0.4em} \\
+  \faEnvelope\comma\href{mailto:yifanz16@illinois.edu}{yifanz16@illinois.edu}
+  & $\cdot$ & \faLink\comma\url{https://evzh.net}
+  & $\cdot$ & \faLinkedin\comma
+  \href{https://www.linkedin.com/in/yifan-zhao-287745162/}{yifan-zhao-287745162}
+  & $\cdot$ & \faPhone\comma{}{(810) 333-7919}
+\end{tabular}
+\vspace{0.3em}
+
+\section{Research Interests}
+Machine Learning Systems and Compilers;
+Compiler Design and Optimizations;
+Performance Engineering; Approximate Computing; Edge Computing.
+
+\section{Research and Work Experience}
+
+\cventry{University of Illinois Urbana-Champaign}{}{Urbana}{IL}{2019 --- Spring 2026
+(planned)}
+{
+  Graduate Research Assistant, Ph.D.~candidate in Computer Science
+  \begin{itemize}
+    \item Design and build tensor compilers that optimize DNN inference on GPUs, CPUs,
+      and accelerators.
+    \item Develop the \href{https://arxiv.org/abs/2510.08726}{Neptune} tensor compiler:
+      generalizes and automates FlashAttention-style operator fusion;
+      achieves SOTA performance on modern GPUs.
+    \item Develop the \href{https://dl.acm.org/doi/10.1145/3620666.3651348}{Felix}
+      tensor program autotuner: create a differentiable search space for tensor programs,
+      and optimize them with gradient descent.
+    \item Publish first-author papers at top ML systems conferences:
+      Neptune [to appear at PLDI'26],
+      \href{https://dl.acm.org/doi/10.1145/3620666.3651348}{Felix [ASPLOS'24]},
+      \href{https://proceedings.mlsys.org/paper_files/paper/2023/file/89efa87dc8f0a5d18e4ae0a479658f60-Paper-mlsys2023.pdf}{ApproxCaliper
+      [MLSys'23]}.
+  \end{itemize}
+}
+
+\cventry{Nvidia}{Deep Learning Engineer Intern}{Santa Clara}{CA}{May 2024 --- Aug.~2024}
+{
+  \begin{itemize}
+    \item Help develop loop optimizations for an internal DL compiler
+      (polyhedral transformations in MLIR).
+    \item Implement complex DNN operators (e.g., deformable convolution/attention) in this compiler
+      to probe missing features and performance issues, and deliver usable kernels.
+    \item Write an internal paper to document the improvements.
+\end{itemize}}
+
+\cventry{University of Michigan}{Undergraduate Research Assistant}{Ann Arbor}{MI}{May
+2018 --- Sep.~2018}
+{
+  \begin{itemize}
+    \item Co-lead the Huron project: a compiler analysis and runtime for detecting and repairing
+      false sharing (performance bug) in parallel CPU programs.
+    \item Publish a co-first author paper on Huron at
+      \href{https://dl.acm.org/doi/10.1145/3314221.3314644}{PLDI'19}.
+  \end{itemize}
+}
+
+\section{Education}
+
+\cventry{University of Illinois at Urbana-Champaign}{}{Urbana}{IL}{2019 --- Now}
+{\textit{Ph.D.~candidate} in Computer Science; \textbf{Advisors}: Sasa Misailovic, Vikram Adve \\
+  Selected courses: Advanced Compiler Design, Compilers for Edge Computing, ML for Software
+Engineering}
+
+\cventry{University of Michigan}{}{Ann Arbor}{MI}{2017 --- 2019}
+{\textit{Bachelor of Science and Engineering} in Computer Science \\
+Awards: James B. Angell Scholar, University Honors, Dean’s Honor List}
+
+\cventry{Shanghai Jiaotong University}{}{Shanghai}{China}{2015 --- 2019}
+{\textit{Bachelor of Science} in Electrical and Computer Engineering \\
+Shanghai Jiaotong --- Univ.~of Michigan Dual Degree Program}
+
+\section{Technical Skills}
+
+\begin{itemize}
+  \item Areas of expertise: compilers (deep learning and general-purpose),
+    programming languages, system design, performance engineering
+  \item Compilers: LLVM; TVM, MLIR; Triton, JAX Pallas, Tilelang
+  \item Deep learning frameworks: PyTorch (incl.~TorchInductor), JAX; CUTLASS
+  \item Programming languages: Python, C/C++, CUDA, Rust (working languages); also familiar with
+    Haskell, C\#, JavaScript.
+\end{itemize}
+
+\section{Select Publications}
+
+\cvpublist{[Under review at OSDI'26]}
+{Nautilus: Auto-Scheduling Tensor Compiler for Advanced Fusion in Asynchronous
+and Pipelined GPU Kernels.}
+{\textbf{Yifan Zhao}, Yuchen Yang, Matei Budiu, Minsoo Kim, Sasa Misailovic}
+
+\cvpublist{[To appear at PLDI'26]}
+{Neptune: Advanced ML Operator Fusion for Locality and Parallelism on GPUs.}
+{\textbf{Yifan Zhao}, Egan Johnson, Prasanth Chatarasi, Vikram Adve, Sasa Misailovic}
+
+\cvpublist{[Under review\\ISSTA'26]}
+{\mbox{ARQ: A Mixed-Precision Quantization Framework for Accurate and Certifiably Robust
+DNNs.}\vspace{-1em}}
+{Yuchen Yang, \textbf{Yifan Zhao}, Shubham Ugare, Gagandeep Singh, Sasa Misailovic}
+
+\cvpublist{[ASPLOS'24]}
+{Felix: Optimizing Tensor Programs with Gradient Descent.}
+{\textbf{Yifan Zhao}, Hashim Sharif, Vikram Adve, Sasa Misailovic}
+
+\cvpublist{[PACMI'24]}
+{\mbox{Programming Systems for Improving the Performance of Deep Learning-Intensive
+Applications.}\vspace{-1em}}
+{\textbf{Yifan Zhao}, Vikram Adve, Sasa Misailovic}
+
+\cvpublist{[MLSys'23]}
+{\mbox{ApproxCaliper: Exploiting Application-level Error Resiliency for Optimizing Neural
+Networks.}\vspace{-1em}}
+{\textbf{Yifan Zhao*}, Hashim Sharif*, Peter Pao-Huang, Vatsin Ninad Shah, Arun
+  Narenthiran, Mateus Valverde Gasparino, Nathan Zhao, Abdulrahman Mahmoud, Sarita Adve,
+Girish Chowdhary, Sasa Misailovic, Vikram Adve}
+
+\cvpublist{[VR'23]}
+{Power, Performance, and Image Quality Tradeoffs in Foveated Rendering.}
+{Rahul Singh, Muhammad Huzaifa, Jeffrey Liu, Anjul Patney, Hashim Sharif, \textbf{Yifan
+Zhao}, Sarita Adve}
+
+\cvpublist{[PPoPP'21]}
+{ApproxTuner: A Compiler and Runtime System for Adaptive Approximations.}
+{Hashim Sharif, \textbf{Yifan Zhao}, Maria Kotsifakou, Akash Kothari, Ben Schreiber,
+Elizabeth Wang, Yasmin Sarita, Nathan Zhao, Keyur Joshi, Vikram Adve, Sasa Misailovic, Sarita Adve}
+
+\cvpublist{[PLDI'19]}
+{Huron: Hybrid False Sharing Detection and Repair.}
+{Tanvir Ahmed Khan*, \textbf{Yifan Zhao}*, Gilles Pokam, Barzan Mozafari, Baris Kasikci}
+
+\section{Teaching and Mentoring}
+
+\subsection{Teaching Assistant}
+
+\cvitem{Fall 2023}{UIUC CS 426 Compiler Construction (Sasa Misailovic)}
+\cvitem{Fall 2018}{UMich CS 482 Operating Systems (Baris Kasikci)}
+
+\subsection{Research Mentoring}
+
+\cvshortlist{25/05 -- present}{UIUC Undergraduate student, Minsoo Kim\newline{}
+Collaborating to extend Neptune to new hardware and operator setups.}
+\cvshortlist{24/09 -- 25/01}{
+  UIUC Undergraduate (IBM IIDAI program), Krish Patel and Vishesh Prasad\newline{}
+Collaborated to improve the cost (latency prediction) model used in Felix.}
+\cvshortlist{22/08 -- 23/01}{UIUC Ph.D.~student, Vimarsh Sathia \newline{}
+Collaborated on an extension of the ApproxCaliper project.}
+\cvshortlist{20/12 -- 22/12}{UIUC Undergraduate student, Peter Pao-Huang \newline{}
+Collaborated on the ApproxCaliper project.}
+\cvshortlist{21/12 -- 22/05}{UIUC Undergraduate student, Yi Zhou \newline{}
+Collaborated on an accuracy-aware tensor compiler project.}
+\cvshortlist{21/05 -- 21/10}{Univ.~of Belgrade Undergraduate student, Pavle
+  Divovi\'c \newline{}
+Collaborated on Tensor DSL, PyTorch backend in HPVM, and PyTorch performance portability.}
+
+\end{document}
