@@ -10,6 +10,7 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{xparse}  % for \NewDocumentCommand
+\usepackage{ifthen}  % for \ifthenelse and \equal
 
 \titleformat{\section}{\sc\Large}{}{0pt}{}[\hrule]
 \titlespacing*{\section}{0pt}{0.7em minus 0.2em}{0.8em minus 0.2em}
@@ -94,7 +95,7 @@ Performance Engineering; Approximate Computing; Edge Computing.
     \item Develop the \href{https://dl.acm.org/doi/10.1145/3620666.3651348}{Felix}
       tensor program autotuner: create a differentiable search space for tensor programs,
       and optimize them with gradient descent.
-    \item Publish first-author papers at top ML systems conferences:
+    \item Published first-author papers at top ML systems conferences:
       Neptune [to appear at PLDI'26],
       \href{https://dl.acm.org/doi/10.1145/3620666.3651348}{Felix [ASPLOS'24]},
       \href{https://proceedings.mlsys.org/paper_files/paper/2023/file/89efa87dc8f0a5d18e4ae0a479658f60-Paper-mlsys2023.pdf}{ApproxCaliper
@@ -105,27 +106,28 @@ Performance Engineering; Approximate Computing; Edge Computing.
 \cventry{Nvidia}{Deep Learning Engineer Intern}{Santa Clara}{CA}{May 2024 --- Aug.~2024}
 {
   \begin{itemize}
-    \item Help develop loop optimizations for an internal DL compiler
+    \item Helped develop loop optimizations for an internal DL compiler
       (polyhedral transformations in MLIR).
-    \item Implement complex DNN operators (e.g., deformable convolution/attention) in this compiler
+    \item Implemented complex DNN operators (e.g., deformable convolution/attention) in
+      this compiler
       to probe missing features and performance issues, and deliver usable kernels.
-    \item Write an internal paper to document the improvements.
+    \item Wrote an internal paper documenting the improvements.
 \end{itemize}}
 
 \cventry{University of Michigan}{Undergraduate Research Assistant}{Ann Arbor}{MI}{May
 2018 --- Sep.~2018}
 {
   \begin{itemize}
-    \item Co-lead the Huron project: a compiler analysis and runtime for detecting and repairing
+    \item Co-led the Huron project: a compiler analysis and runtime for detecting and repairing
       false sharing (performance bug) in parallel CPU programs.
-    \item Publish a co-first author paper on Huron at
+    \item Published a co-first-author paper on Huron at
       \href{https://dl.acm.org/doi/10.1145/3314221.3314644}{PLDI'19}.
   \end{itemize}
 }
 
 \section{Education}
 
-\cventry{University of Illinois at Urbana-Champaign}{}{Urbana}{IL}{2019 --- Now}
+\cventry{University of Illinois Urbana-Champaign}{}{Urbana}{IL}{2019 --- Now}
 {\textit{Ph.D.~candidate} in Computer Science; \textbf{Advisors}: Sasa Misailovic, Vikram Adve \\
   Selected courses: Advanced Compiler Design, Compilers for Edge Computing, ML for Software
 Engineering}
@@ -143,7 +145,7 @@ Shanghai Jiaotong --- Univ.~of Michigan Dual Degree Program}
 \begin{itemize}
   \item Areas of expertise: compilers (deep learning and general-purpose),
     programming languages, system design, performance engineering
-  \item Compilers: LLVM; TVM, MLIR; Triton, JAX Pallas, Tilelang
+  \item Compilers: LLVM; TVM, MLIR; Triton, JAX Pallas, TileLang
   \item Deep learning frameworks: PyTorch (incl.~TorchInductor), JAX; CUTLASS
   \item Programming languages: Python, C/C++, CUDA, Rust (working languages); also familiar with
     Haskell, C\#, JavaScript.
@@ -210,18 +212,18 @@ Elizabeth Wang, Yasmin Sarita, Nathan Zhao, Keyur Joshi, Vikram Adve, Sasa Misai
 
 \subsection{Research Mentoring}
 
-\cvshortlist{25/05 -- present}{UIUC Undergraduate student, Minsoo Kim\newline{}
+\cvshortlist{25/05 -- present}{UIUC undergraduate student, Minsoo Kim\newline{}
 Collaborating to extend Neptune to new hardware and operator setups.}
 \cvshortlist{24/09 -- 25/01}{
   UIUC Undergraduate (IBM IIDAI program), Krish Patel and Vishesh Prasad\newline{}
-Collaborated to improve the cost (latency prediction) model used in Felix.}
+Collaborated to improve the latency-prediction cost model used in Felix.}
 \cvshortlist{22/08 -- 23/01}{UIUC Ph.D.~student, Vimarsh Sathia \newline{}
 Collaborated on an extension of the ApproxCaliper project.}
-\cvshortlist{20/12 -- 22/12}{UIUC Undergraduate student, Peter Pao-Huang \newline{}
+\cvshortlist{20/12 -- 22/12}{UIUC undergraduate student, Peter Pao-Huang \newline{}
 Collaborated on the ApproxCaliper project.}
-\cvshortlist{21/12 -- 22/05}{UIUC Undergraduate student, Yi Zhou \newline{}
+\cvshortlist{21/12 -- 22/05}{UIUC undergraduate student, Yi Zhou \newline{}
 Collaborated on an accuracy-aware tensor compiler project.}
-\cvshortlist{21/05 -- 21/10}{Univ.~of Belgrade Undergraduate student, Pavle
+\cvshortlist{21/05 -- 21/10}{Univ.~of Belgrade undergraduate student, Pavle
   Divovi\'c \newline{}
 Collaborated on Tensor DSL, PyTorch backend in HPVM, and PyTorch performance portability.}
 
@@ -246,9 +248,9 @@ Optimizing Neural Networks
   \item Illinois Autonomous Farm Workshop, 07/07/2021, University of Illinois
 \end{itemize}
 
-\textbf{ApproxTuner}: a Compiler and Runtime System for Adaptive Approximations
+\textbf{ApproxTuner}: A Compiler and Runtime System for Adaptive Approximations
 \begin{itemize}
-  \item Invited talk for CS 598 lecture, 03/10/2022, University of Illinois
+  \item Invited talk for a CS 598 (approx. computing) lecture, 03/10/2022, University of Illinois
   \item UIUC Visit Day Poster Session, 03/06/2022, University of Illinois
   \item Talk to Qualcomm Compiler Team, 12/13/2020, Virtual
   \item Talk to Amazon Compiler Team, 07/24/2020, Virtual
@@ -256,7 +258,7 @@ Optimizing Neural Networks
 
 \section{Contributions to Research Grants}
 \textit{Significantly contributed to writing of the proposals
-that lead to the following research grants being awarded:}
+that led to the following research grants being awarded:}
 
 \textbf{Fellini: Differentiable ML Compiler for Full-Graph Optimization for LLM Models}
 \begin{itemize}
