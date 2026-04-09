@@ -21,8 +21,8 @@ organizations:
 # bio: My research interests include approximate computing, compiler stack for heterogeneous computing, and a mindful blend of both.
 
 interests:
-  - Programming Languages
-  - Compiler System
+  - Efficient AI
+  - Programming Languages and Compilers
   - Approximate Computing
 
 education:
@@ -45,12 +45,15 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:yifanz16@illinois.edu
-  - icon: twitter
+  - icon: linkedin
     icon_pack: fab
-    link: https://twitter.com/evanzhao97
+    link: https://www.linkedin.com/in/yifan-zhao-287745162/
   - icon: github
     icon_pack: fab
     link: https://github.com/Evan-Zhao
+  - icon: twitter
+    icon_pack: fab
+    link: https://twitter.com/evanzhao97
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
   - icon: cv
@@ -62,21 +65,19 @@ social:
 user_groups: []
 ---
 
-I am a 5th-year Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/) at the [University of Illinois Urbana-Champaign](illinois.edu).
+I am a Ph.D. student in the [Department of Computer Science](https://cs.illinois.edu/)
+at the [University of Illinois Urbana-Champaign](https://illinois.edu/).
 
-I am co-advised by [Prof. Sasa Misailovic](http://misailo.web.engr.illinois.edu/) and [Prof. Vikram S. Adve](https://vikram.cs.illinois.edu/).
+I am co-advised by [Prof. Sasa Misailovic](http://misailo.web.engr.illinois.edu/)
+and [Prof. Vikram S. Adve](https://vikram.cs.illinois.edu/).
 
-My research interest is in compilers and programming systems for tensor programs.
-Compilers are an unique vehicle for a myriad of intriguing program optimizations:
+My research is in compilers and programming systems for efficient AI.
 
-- Tensor compilers feature specific optimizations
-  [(loop nest optimizations](https://en.wikipedia.org/wiki/Loop_nest_optimization),
-  [polyhedral model](https://en.wikipedia.org/wiki/Polytope_model), ...)
-  that are highly effective to tensor programs;
-- [Accuracy-aware optimizations](https://misailo.web.engr.illinois.edu/papers/misailovic-accuracy-aware-optimization.pdf)
-  won't even preserve your program's semantics, but they carefully reason about how much havoc they wreak
-  and can be alike beneficial for tensor programs (pruning, quantization).
-- Of course general purpose optimizations are not going away: DCE, CSE, LICM, ...
+I am broadly interested in compilers and programming systems for AI workloads,
+from DNN operators to compound AI systems.
+My work asks how we can let programmers express computations at a high level
+while still generating high-performance code across diverse platforms,
+and how compiler optimization itself can become more adaptive as hardware and models continue to change.
+I also study accuracy-aware optimization, where performance must be balanced with application-level quality.
 
-Together they present a tough challenge (and opportunity!) of _choosing the right optimizations to apply_ to a given tensor program.
 See my recent projects and [CV](/files/cv.pdf) for more details.
